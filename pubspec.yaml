@@ -1,0 +1,58 @@
+name: study_coach
+description: A modern AI-powered study coaching app that guides students step-by-step.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Storage + Files
+  shared_preferences: ^2.2.2
+  file_picker: ^6.1.1
+
+  # Networking
+  http: ^1.1.0
+
+  # Utilities
+  intl: ^0.18.0
+
+  # Beautiful UI / Animations
+  lottie: ^2.7.0
+  shimmer: ^3.0.0
+  animated_text_kit: ^4.2.2
+  confetti: ^0.7.0
+  simple_animations: ^5.0.0+2
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/backgrounds/
+  # Fonts are currently commented out because the font files are not present in
+  # the repository. To enable custom fonts, add the font files under
+  # `assets/fonts/` and then uncomment the block below.
+
+# fonts:
+#  - family: Poppins
+#    fonts:
+#      - asset: assets/fonts/Poppins-Regular.ttf
+#      - asset: assets/fonts/Poppins-Medium.ttf
+#        weight: 500
+#      - asset: assets/fonts/Poppins-Bold.ttf
+#        weight: 700
